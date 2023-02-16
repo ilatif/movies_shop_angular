@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --configuration production --base-href /movies_shop_angular/demo/movies_shop_angular/",
+    "build:prod": "ng build --configuration production --base-href /movies_shop_angular/dist/movies_shop_angular/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
