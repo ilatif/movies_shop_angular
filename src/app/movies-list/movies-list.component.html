@@ -11,7 +11,7 @@
       <ng-container *ngIf="currentFilter === 'all' || (currentFilter !== 'all' && movie.genres.includes(currentFilter))">
         <div class="movie" [routerLink]="['movies', movie.key]">
           <div>
-            <img [src]="'/assets/images/movie-covers/' + movie.img" />
+            <img [src]="assetsPath + '/assets/images/movie-covers/' + movie.img" />
           </div>
           <div class="movie-details">
             <p class="movie-name">{{ movie.name }}</p>

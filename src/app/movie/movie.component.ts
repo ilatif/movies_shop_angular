@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 import { MovieService } from '../movie.service';
 
@@ -12,6 +13,7 @@ export class MovieComponent implements OnInit {
 
   isLoading = false;
   movie = null;
+  assetsPath = environment.assetsPath;
 
   constructor(private router: Router,
     private activatedRoute: ActivatedRoute,

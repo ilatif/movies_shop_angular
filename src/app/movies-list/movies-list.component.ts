@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../movie.service';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-movies-list',
@@ -11,6 +12,7 @@ export class MoviesListComponent implements OnInit {
   movies = [];
   genres = [];
   currentFilter = 'all';
+  assetsPath = environment.assetsPath;
 
   constructor(private movieService: MovieService) { }
 
