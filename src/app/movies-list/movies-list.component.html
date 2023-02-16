@@ -1,0 +1,24 @@
+<div class="movies-container">
+  <div class="movies-filter">
+    <select [(ngModel)]="currentFilter">
+      <ng-container *ngFor="let genre of genres">
+        <option [value]="genre">{{ genre }}</option>
+      </ng-container>
+    </select>
+  </div>
+  <div class="movies-list">
+    <ng-container *ngFor="let movie of movies;">
+      <ng-container *ngIf="currentFilter === 'all' || (currentFilter !== 'all' && movie.genres.includes(currentFilter))">
+        <div class="movie" [routerLink]="['movies', movie.key]">
+          <div>
+            <img [src]="'/assets/images/movie-covers/' + movie.img" />
+          </div>
+          <div class="movie-details">
+            <p class="movie-name">{{ movie.name }}</p>
+            <p>{{ movie.rate }}</p>
+          </div>
+        </div>
+        </ng-container>
+    </ng-container>
+  </div>
+</div>

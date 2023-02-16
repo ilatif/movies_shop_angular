@@ -1,0 +1,41 @@
+.movies-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.movies-filter {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.movies-filter select {
+  width: 150px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.movies-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.movie {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.movie-details {
+  text-align: center;
+}
+
+.movie-name {
+  font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<div class="movie-container">
+  <ng-container *ngIf="isLoading">
+    Loading movie...
+  </ng-container>
+  <ng-container *ngIf="!isLoading">
+    <ng-container *ngIf="movie">
+      <div class="movie">
+        <div class="back-to-movies">
+          <a [routerLink]="['/']">&lt; Back to movies</a>
+        </div>
+        <div>
+          <img [src]="'/assets/images/movie-covers/' + movie.img" />
+        </div>
+
+        <div>
+          {{ movie.name }}
+        </div>
+
+        <div>
+          {{ movie.description }}
+        </div>
+
+        <div>
+          {{ movie.rate }}
+        </div>
+
+        <div>
+          {{ movie.length }}
+        </div>
+
+        <div>
+          {{ movie.genres }}
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+</div>
