@@ -30,6 +30,12 @@
   justify-content: center;
   flex-direction: column;
   cursor: pointer;
+
+  &:hover {
+    background-color: #c5c5bc;
+    transform: scale(1.1);
+    transition: transform 1.2s;
+  }
 }
 
 .movie-details {
