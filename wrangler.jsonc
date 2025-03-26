@@ -2,6 +2,8 @@
   // Project name (must match your Cloudflare Pages project name)
   "name": "movies-shop",
 
+  "main": "src/index.ts",
+
   // Build configuration for your Angular project
   "build": {
     // Command to build your Angular project
