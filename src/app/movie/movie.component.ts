@@ -13,7 +13,6 @@ export class MovieComponent implements OnInit {
 
   isLoading = false;
   movie = null;
-  assetsPath = environment.assetsPath;
 
   constructor(private router: Router,
     private activatedRoute: ActivatedRoute,
