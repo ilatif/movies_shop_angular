@@ -12,7 +12,6 @@ export class MoviesListComponent implements OnInit {
   movies = [];
   genres = [];
   currentFilter = 'all';
-  assetsPath = environment.assetsPath;
 
   constructor(private movieService: MovieService) { }
 
